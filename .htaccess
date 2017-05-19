@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www\.askapache\.com$ [NC]
+RewriteRule ^(.*)$ http://www.askapache.com/$1 [R=301,L]
